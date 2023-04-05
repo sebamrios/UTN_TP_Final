@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: rgb(216, 224, 231);
+    font-size: 1.5rem;
+    color:aliceblue;
+    text-align: right;
+    padding-right: 1rem;
+}
+
+i{
+    margin-right: 1rem;
+}
+
+.ingreso{
+    margin-top: 1rem;
+}
+.presentacion{
+    color: aliceblue;
+    font-size: 1.8rem;
+}
+
+section{
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    color:rgb(250, 64, 40);
+    padding: 1rem;
+    background-image: url(./imagen-1.jpg);
+    background-repeat: no-repeat;
+    background-size: 60rem 45rem;
+    background-attachment: fixed;
+    background-position: center center;
+    text-align: center;
+    justify-content: center;
+    
+}
+
