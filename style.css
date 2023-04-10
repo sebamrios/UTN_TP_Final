@@ -3,39 +3,59 @@
     padding: 0;
 }
 
-header{
+header {
     background-color: rgb(216, 224, 231);
     font-size: 1.5rem;
-    color:aliceblue;
+    color: aliceblue;
     text-align: right;
     padding-right: 1rem;
 }
 
-i{
+body{
+    background-color: rgba(43, 39, 37, 0.089);
+}
+
+.box {
+    background-image: url(images/fondo.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 100% 100%;
+    text-align: justify;
+    color: rgb(253, 253, 251);
+    text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+    opacity: 0.9; 
+}
+
+.titulo{
+    text-align: center;
+}
+
+i {
     margin-right: 1rem;
 }
 
-.ingreso{
+.ingreso {
     margin-top: 1rem;
 }
-.presentacion{
+
+
+.presentacion {
     color: aliceblue;
     font-size: 1.8rem;
 }
 
-section{
+section {
     text-align: center;
     width: 100vw;
     height: 100vh;
-    color:rgb(250, 64, 40);
+    color: rgb(250, 64, 40);
     padding: 1rem;
-    background-image: url(./imagen-1.jpg);
-    background-repeat: no-repeat;
+    background-image: url(.images/imagen-1.jpg);
+    background-repeat: repeat;
     background-size: 60rem 45rem;
     background-attachment: fixed;
     background-position: center center;
     text-align: center;
     justify-content: center;
-    
-}
 
+}
