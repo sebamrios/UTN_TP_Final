@@ -15,6 +15,13 @@ body{
     background-color: rgba(43, 39, 37, 0.089);
 }
 
+.fondoCamping{
+    height: 23rem;
+    
+}
+
+
+
 .box {
     background-image: url(images/fondo.png);
     background-repeat: no-repeat;
@@ -59,3 +66,12 @@ section {
     justify-content: center;
 
 }
+
+.fondoGris{
+    background-color: rgba(35, 124, 13, 0.2) pt-2 pb-2;
+}
+
+a{
+    color: #808080;
+}
+

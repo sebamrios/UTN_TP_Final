@@ -24,53 +24,47 @@ function diferencia(){
 diferencia();
 
 $(document).ready(()=>{
+  $("#email");
   $("#personas");
-  $("#modal")
+  $("#modal");
   $("#start").attr("min",today);
   $("#end").attr("min",today);
   $("#cotizar").click(()=>{
-    diferencia()
-    validar()
+    diferencia();
+    validar();
     personas.value=" ";
     start.value=" ";
     end.value=" ";
+    email.value=" ";
     car.checked=false;
   })
 }) 
 
-let valorEstadidaDolar = 50;//precio expresado al valor del dolar blue
+let valorEstadidaDolar = 50;//precio expresado en dolares
 
 let valorBlue;
 
-
-$(document).ready(function(){
-  const url = "https://api.bluelytics.com.ar/v2/latest";
-  $("#cotizar").click(function(){
-    $.ajax({
-      url: url,
-      type:"GET",
-      success: function(result){
-        valorBlue=result.blue.value_sell
-      },
-      error:function(error){
-        console.log(`Error${error}`)
-      }
-    })
-  })
+// Peticion fetch 
+const url = 'https://api.bluelytics.com.ar/v2/latest'
+fetch(url)
+.then(res => res.json())
+.then(res => {
+    valorBlue = res.blue.value_sell
 })
 
+
 function validar() {
-    if(start.value>=end.value){
+      if(email.value==""){
+        modal.innerText="Ingrese un correo valido"
+      }else if(personas.value<1){
+        modal.innerText="Ingrese un número valido de visitantes"
+      }else if(start.value>=end.value){
         modal.innerText= "La fecha de salida debe ser posterior a la entrada"    
       }else{
-      modal.innerText= `Usted reservo para la fecha ${start.value}, por ${diferencia()} días, con fecha de salida el ${end.value} paras ${personas.value} personas ${auto()} El precio en pesos de acuerdo al dolar blue es ${dias*valorBlue*valorEstadidaDolar}`   
+      modal.innerText= `Usted reservo para la fecha ${start.value}, por ${diferencia()} día/s, con fecha de salida el ${end.value} para ${personas.value} persona/s ${auto()} El precio en pesos de acuerdo al dolar blue es ${dias*valorBlue*valorEstadidaDolar} Si lo desea esta infromación se enviara a ${email.value}`   
     }
     return
 }
-
-
-
-
 
 function auto(){
   if($('#car').prop("checked")==true){
