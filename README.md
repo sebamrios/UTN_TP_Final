@@ -2,12 +2,13 @@
 
 Integrantes Grupo13:
 * BERTA, Marcos
+* ORDOÑEZ SANCHEZ, Federico
 * RIOS, Sebastian 
-* ORDOÑEZ, Federico
+
 
 LandingPage
 * Tipo: CAMPING WEB
-* Nombre de fantasia:
+* Nombre de fantasia: UTN-CAMPING 
   
 Objetivos de la pagina:
 * Para el usuario: 
@@ -16,7 +17,7 @@ Objetivos de la pagina:
   * Conocer el lugar del predio, como la mejor ruta-API.
                       
 * Para el camping:
-  * por medio del email, informar acerca de las novedades del predio.
+  * Captar por medio del email, potenciales clientes e informar acerca de las novedades del predio.
   
 
 El wireframe correspondiente al Trabajo Integrador se encuentra en este link

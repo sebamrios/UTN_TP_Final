@@ -3,10 +3,10 @@ let dd = today.getDate();
 let mm = today.getMonth() + 1; //January is 0!
 let yyyy = today.getFullYear();
 if (dd < 10) {
-  dd = '0' + dd
+    dd = '0' + dd
 }
 if (mm < 10) {
-  mm = '0' + mm
+    mm = '0' + mm
 }
 
 today = yyyy + '-' + mm + '-' + dd;
@@ -62,8 +62,8 @@ function validar() {
         modal.innerText= "La fecha de salida debe ser posterior a la entrada"    
       }else{
       modal.innerText= `Usted reservo para la fecha ${start.value}, por ${diferencia()} día/s, con fecha de salida el ${end.value} para ${personas.value} persona/s ${auto()} El precio en pesos de acuerdo al dolar blue es ${dias*valorBlue*valorEstadidaDolar} Si lo desea esta infromación se enviara a ${email.value}`   
-    }
-    return
+      }
+      return
 }
 
 function auto(){

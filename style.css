@@ -17,10 +17,7 @@ body{
 
 .fondoCamping{
     height: 23rem;
-    
 }
-
-
 
 .box {
     background-image: url(images/fondo.png);
@@ -64,7 +61,6 @@ section {
     background-position: center center;
     text-align: center;
     justify-content: center;
-
 }
 
 .fondoGris{
@@ -74,4 +70,3 @@ section {
 a{
     color: #808080;
 }
-
