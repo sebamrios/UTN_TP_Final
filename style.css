@@ -15,14 +15,23 @@ body{
     background-color: rgba(43, 39, 37, 0.089);
 }
 
+.fondoCamping{
+    height: 23rem;
+}
+
 .box {
     background-image: url(images/fondo.png);
     background-repeat: no-repeat;
     background-position: top center;
     background-size: 100% 100%;
-    color: #fff;
     text-align: justify;
-    opacity: 0.9;
+    color: rgb(253, 253, 251);
+    text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+    opacity: 0.9; 
+}
+
+.titulo{
+    text-align: center;
 }
 
 i {
@@ -52,5 +61,12 @@ section {
     background-position: center center;
     text-align: center;
     justify-content: center;
+}
 
+.fondoGris{
+    background-color: rgba(35, 124, 13, 0.2) pt-2 pb-2;
+}
+
+a{
+    color: #808080;
 }
