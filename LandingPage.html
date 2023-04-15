@@ -145,35 +145,26 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-4 p-3">
+                <div class="col-md-6 col-lg-4 p-3">
                     <div class="card w-100 h-100 ">
-                        <div class="card-header bi bi-brightness-high text-center" id="climaNavbar">CLIMA</div>
-                        <div class="card-body text-primary">
-                            <h5 class="card-title text-center">Pronostico</h5>
-                            <div class="card m-1">
-                                <div class="card-body bi bi-brightness-high text-center">
-                                    Viernes - 24/abr/23
+                        <div class="card-header bi bi-brightness-high text-center" id="climaNavbar"></div>
+                            <div class="card-body text-primary">
+                                <h5 class="card-title text-center">Pronostico</h5>
+                                <div class="input-group p-1 ">
+                                    <span class="input-group-text" id="basic-addon1" style="width:100px">Ciudad</span>
+                                    <input type="text" class="form-control" placeholder="Ciudad" aria-label="Username"
+                                        aria-describedby="basic-addon1" id="ciudad">
+                                </div>
+                                <br>
+                                <div class="card m-1">
+                                    <div class="card-body text-center"  style="height: 170px">
+                                        <p id="ImprimirDatos"></p>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="card m-1">
-                                <div class="card-body bi bi-cloud text-center">
-                                    Sabado - 25/abr/23
-                                </div>
-                            </div>
-                            <div class="card m-1">
-                                <div class="card-body bi bi-cloud-rain-heavy text-center">
-                                    Domingo - 26/abr/23
-                                </div>
-                            </div>
-                            <div class="card m-1">
-                                <div class="card-body bi bi-cloud-rain-heavy text-center">
-                                    Lunes - 27/abr/23
-                                </div>
-                            </div>
-                        </div>
                         <div class="card-footer">
                             <div class="d-grid gap-2  mx-auto">
-                                <button type="button" class="btn btn-secondary bi bi-brightness-high "> INFO</button>
+                                <button id="botonClima" class="btn btn-secondary bi bi-brightness-high " onclick="getWeather"> INFO</button>
                             </div>
                         </div>
                     </div>

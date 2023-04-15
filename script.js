@@ -74,4 +74,37 @@ function auto(){
   }
 }
 
+//-----------------------Funcion pronosticar clima------------------------------------------------
 
+// Scrip de API Clima
+const boton = document.getElementById("botonClima")
+const ImprimirDatos = document.getElementById("ImprimirDatos")
+
+
+function getWeather() {
+  let hoy = "HOY"
+  let nombreCiudad = document.getElementById("ciudad").value
+
+
+  console.log(nombreCiudad)
+
+  let url = `https://api.openweathermap.org/data/2.5/weather?q=${nombreCiudad}&appid=97a814c2c47483498d79c66f71c62e89`
+  fetch(url)
+    .then((res) => res.json())
+    .then((data) => {
+      let temp = data.main.temp - 273.15;
+      let icon = data.weather[0].description;
+      let lugar = data.name;
+      lugar += " -" + data.sys.country;
+      console.log(icon);
+      temp = temp.toFixed(2);
+      ImprimirDatos.innerHTML = `
+            <p>${hoy} </p>
+            <p>${lugar}</p>
+            <p>${temp} C° </p>
+            <p>${icon} </p>
+            `
+    });
+  console.log("hola");
+}
+boton.addEventListener("click", getWeather)
