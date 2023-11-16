@@ -16,7 +16,7 @@ body{
 }
 
 .box {
-    background-image: url(images/fondo.png);
+    background-image: url(fondo.png);
     background-repeat: no-repeat;
     background-position: top center;
     background-size: 100% 100%;
@@ -45,7 +45,7 @@ section {
     height: 100vh;
     color: rgb(250, 64, 40);
     padding: 1rem;
-    background-image: url(.images/imagen-1.jpg);
+    background-image: url(imagen-1.jpg);
     background-repeat: repeat;
     background-size: 60rem 45rem;
     background-attachment: fixed;
