@@ -21,7 +21,7 @@ body{
 }
 
 .box {
-    background-image: url(images/fondo.png);
+    background-image: url(fondo.png);
     background-repeat: no-repeat;
     background-position: top center;
     background-size: 100% 100%;
